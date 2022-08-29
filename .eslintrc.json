@@ -4,7 +4,12 @@
     "node": true,
     "browser": true
   },
-  "extends": ["plugin:react/recommended", "eslint:recommended", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "prettier",
+    "next/core-web-vitals"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -12,13 +17,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-
   "plugins": ["prettier", "react", "react-hooks"],
   "rules": {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "warn",
     "react-hooks/exhaustive-deps": "error",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "@next/next/no-img-element": "off"
   }
 }
